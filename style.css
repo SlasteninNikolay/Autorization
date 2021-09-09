@@ -1,0 +1,38 @@
+li {
+    display: flex;
+    align-items: center;
+}
+.delete-user {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    background-color: #eee;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.delete-user:after,
+.delete-user:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+}
+.delete-user:after {
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-color: red;
+}
+
+.delete-user:before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    background-color: red;
+}
+.delete-user:hover {
+    background-color: #ccc;
+}
+.delete-user:active {
+    background-color: #eb8f8f;
+}
